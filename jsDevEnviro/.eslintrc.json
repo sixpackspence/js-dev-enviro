@@ -1,0 +1,21 @@
+{
+  "root": true, //this will ensure this is used as the root
+  "extends": [
+    "eslint:recommended", //this pulls the recommended rules
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,//tells what version we are working with
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,//this tells what to expect to work with
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-console": 1 //0 means off, 1 means warning, 2 means error
+
+  }
+}
